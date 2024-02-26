@@ -1,0 +1,170 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --purple-color:#39008096;
+    --min-purple-color:#b365eb7c;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+/* start fig */
+.fig-container .fig-box::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #CCC;
+}
+  .fig-container .fig-content-one {
+    min-width: 250px;
+    background-color:#eee;
+    height: 100vh;
+    padding-top:10px;
+  }
+  @media (max-width:767px) {
+    .fig-container .fig-content-one {
+        min-width:150px;
+    }
+    .fig-container .fig-content-one h4 {
+        font-size: 13px;
+        margin-left: 6px;
+    }
+    .fig-container .fig-content-one .head-one .icon {
+        width: 15px;
+        font-size: 10px;
+      }
+  }
+  .fig-container .fig-content-one .head-one {
+    padding: 7px;
+    margin: 0;
+  }
+  @media (max-width:767px) {
+    .fig-container .fig-content-one {
+      padding: 0;
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+  .fig-container .fig-content-one .head-one .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .fig-container .fig-content-two {
+    width: 100%;
+    padding-top:10px;
+  }
+  @media (max-width:767px) {
+    .fig-container .fig-content-two {
+      padding: 0;
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+  .fig-container .fig-content-two .head-two {
+     display: flex;
+     justify-content: space-between;
+     padding: 7px;
+  }
+  .fig-container .fig-content-two .head-two .ok-1 input {
+    width: 360px;
+    height: 30px;
+    background-color: #eee;
+    border: none;
+    padding:6px 10px;
+    border-radius: 5px;
+  }
+  .fig-container .fig-content-two .head-two .ok-1 input:focus {
+    outline: none;
+  }
+  @media (max-width:767px) {
+    .fig-container .fig-content-two .head-two .ok-1 input {
+      width:150px;
+      margin-right:10px;
+    }
+  }
+  .fig-container .fig-content-two .head-two .ok-1 .icon-1 {
+    font-size: 10px;
+    position:absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+  }
+  .fig-container .fig-content-two .head-two .ok-2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+  }
+  .fig-container .fig-content-two .head-two .ok-2 img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .fig-container .fig-content-two .head-two .ok-2 .image {
+    position:relative;
+  }
+  @media (max-width:767px) {
+    .fig-container .fig-content-two .head-two .ok-2 .image {
+      display: none;
+    }
+  }
+  .fig-container .fig-content-two .head-two .ok-2 .image::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.4;
+  }
+  .fig-container .fig-content-two .head-two .ok-2 .notif {
+    position: relative;
+  }
+  @media (max-width:767px) {
+    .fig-container .fig-content-two .head-two .ok-2 .notif i {
+      margin-left: 8px;
+      margin-right:8px
+    }
+  }
+  .fig-container .fig-content-two .head-two .ok-2 .notif::before {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  @media (max-width:767px) {
+    .fig-container .fig-content-two .head-two .ok-2 .notif::before {
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  }
+ 
